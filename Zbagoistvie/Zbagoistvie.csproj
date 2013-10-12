@@ -257,6 +257,7 @@
     <Content Include="Content\font\pics\pics\pics\pics\pics\pics\pics\pics\.themeOption h2, .html" />
     <Content Include="Content\font\pics\pics\pics\pics\pics\pics\pics\pics\icon.html" />
     <Content Include="Content\font\pics\pics\pics\pics\pics\pics\pics\pics\pics\icon.html" />
+    <Content Include="Content\img\iFNNSnDXm70.jpg" />
     <Content Include="Content\img\image40a1.png" />
     <Content Include="Content\img\image5265.png" />
     <Content Include="Content\img\image5cb7.png" />
@@ -265,6 +266,9 @@
     <Content Include="Content\img\imagec0ca.jpg" />
     <Content Include="Content\img\imagecc80.png" />
     <Content Include="Content\img\imagee0f8.png" />
+    <Content Include="Content\img\LojpCFXzMG8 - копия.jpg" />
+    <Content Include="Content\img\LojpCFXzMG8.jpg" />
+    <Content Include="Content\img\LojpCFXzMG8.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
