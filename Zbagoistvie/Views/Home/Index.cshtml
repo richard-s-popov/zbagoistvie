@@ -1,0 +1,161 @@
+﻿@{
+    ViewBag.Title = "Узбагоительное средство. Узбагойся.";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<header>
+
+	<!-- start of logo and contact phone -->
+    <div id="logoAndContact">
+		<div id="contactPhone">
+            <div class="smallIconContainer">
+            	<div class="smallIcon">
+                	<i class="icon-phone"></i>
+                </div>
+            </div>
+            <span class="callUs">For questions or technical support:</span><span class="phone">Call us today +1 2345 678 910</span>
+        </div>
+        <div id="logo">
+        	<!-- place here your logo -->
+            <i class="icon-bookmark"></i>
+            <div id="logoTextContainer">
+            	<span id="logoText">RBProfit</span><br/>
+                <span id="slogan">Rosbusinessprofit</span>
+            </div>
+        	<!-- / place here your logo -->
+        </div>
+    </div>
+    <!-- end of logo and contact phone -->
+
+	<!-- start of banner -->
+	<div id="banner">
+    	<div class="bannerCaption">
+        	<div class="bannerText">
+            	<h1 class="bannerTitle">Узбагоительное средство</h1>
+                Integer sed odio quis lacus accumsan ornare. Aliquam erat volutpat semper velit, tempor lacinia sapien placerat vel. In sit amet pellentesque leo.
+				Suspendisse eros mauris, ullamcorper sed aliquet at, malesuada mattis mi. Etiam at lacus libero, non aliquam dolor pretium vel.
+            	<br /><a class="button big" href="#">Purchase Now <i class="icon-caret-right buttonArrow"></i></a>
+                <span class="info marginLeft"><i class="icon-info-sign"></i> Need more info? Call us +1 2345 678 910</span>
+            </div>
+        </div>
+        <div class="bannerPicture">
+            @*<div class="bannerTag">
+                Super<br/>Offer
+            </div>*@
+            <img alt="image" src="@Url.Content("~/Content/img/image5cb7.png")" />
+		</div>
+	</div>
+    <!-- end of banner -->
+    
+</header>
+
+<!-- Start of main container -->
+<div id="mainContainer">
+	
+    <!-- Start of three columns -->
+	<div class="row topBorder threeColumns">
+		<div class="oneFromThree first res-hasImage">
+		  <div class="container">
+				<h2>1 упаковка</h2>
+                <div class="content">
+                	<div class="columnImage">
+                		<a href="#">
+                        	<span class="caption arrow"><i class="icon-link"></i></span>
+                            <div class="imagePattern"></div>
+                            <img alt="image" src="" />
+                        </a>
+                	</div>
+                    Donec laoreet, magna vitae laoreet dictum, est orci commodo nunc, eget mattis elit diam a nisi. Etiam pharetra vulputate egestas vehicula leo a blandit molestie at, pharetra vitae nunc.
+                    <br/><a class="button" href="#">Read More <i class="icon-caret-right buttonArrow"></i></a>
+                </div>
+		  </div>
+		</div>
+		<div class="oneFromThree res-hasImage">
+			<div class="container">
+				<h2>5 пачек</h2>
+				<div class="content">
+                    <div class="columnImage">
+                        <span class="caption">Simple caption</span>
+                        <div class="imagePattern"></div>
+                        <img alt="image" src="../../../../imagee040.jpg?picture=CatchLanding/image_290px_2.jpg"/>
+                    </div>
+                	Nam lobortis lectus vitae velit viverra sit amet tempus eros dictum. Etiam vehicula, felis id volutpat malesuada, velit tortor mollis purus, quis iaculis est nisl ac magna iaculis placerat.
+                	<br/><a class="button" href="#">Read More <i class="icon-caret-right buttonArrow"></i></a>
+                </div>
+			</div>
+		</div>
+		<div class="oneFromThree last res-hasImage">
+			<div class="container">
+				<h2>Больше 10 пачек</h2>
+				<div class="content">
+                	<div class="columnImage">
+                		<a href="../../../../imagefa35.jpg?picture=CatchLanding/image_290px_3.jpg" rel="prettyPhoto">
+                        	<span class="caption zoom"><i class="icon-search"></i></span>
+                            <div class="imagePattern"></div>
+                            <img alt="" src="../../../../imagefa35.jpg?picture=CatchLanding/image_290px_3.jpg" />
+                        </a>
+                	</div>
+                    Curabitur mollis vulputate interdum. Morbi dictum condimentum orci. Aenean egestas, nunc sed imperdiet commodo, nibh eros tempor augue, a convallis sem dui vitae ipsum non erat.
+                	<br/><a class="button" href="#">Read More <i class="icon-caret-right buttonArrow"></i></a>
+                </div>
+			</div>
+		</div>
+	</div>
+	<!-- End of three columns -->
+</div>
+<!-- End of main container -->
+
+<!--///////////// Scripts ////////////-->
+
+<!-- Scripts -->
+<script src="@Url.Content("~/Scripts/jquery.min.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery.form.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery.mousewheel.min.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery.prettyPhoto.js")"></script>
+<script src="@Url.Content("~/Scripts/mColorPicker.min.js")"></script>
+<!-- / Scripts -->
+
+<!-- FlexSlider -->
+<script src="@Url.Content("~/Scripts/jquery.flexslider-min.js")"></script>
+<!-- / FlexSlider -->
+
+<!-- Product features carousel -->
+<script src="@Url.Content("~/Scripts/jquery.carouFredSel-5.6.2.js")"></script> 
+<script src="@Url.Content("~/Scripts/jquery.touchwipe.min.js")"></script>
+<!-- / Product features carousel -->
+
+<script>
+$(document).ready(function() {
+	
+	//	Product features carousel
+	$('#carousel').carouFredSel({
+		responsive: true,
+		prev: '#prev2',
+		next: '#next2',
+		items: 2,
+		scroll: {
+	        wipe: true,
+	        pauseOnHover: true,
+			mousewheel: true
+	    },
+		items: {
+			width: 290,
+			height: "variable",
+			visible: {
+				min: 1,
+				max: 3
+			}
+		}
+	});
+	// / Product features carousel
+	
+	// Testimonials slider 
+	$('.flexslider').flexslider({
+		mousewheel: true
+	});
+	// / Testimonials slider
+
+});
+</script>
+

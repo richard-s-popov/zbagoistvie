@@ -1,0 +1,59 @@
+﻿/* Main color*/
+#logo i, .bannerTag, .ie8 .bannerPicture:hover .bannerTag, ul.ul li:hover i, ul.ul2 li:hover i, .oneFromFour:hover .quote,
+.mediumIcon, .oneFromTwo:hover .featureName i, .hover, .oneFromTwo:hover input, .oneFromTwo:hover textarea,
+.oneFromTwo:hover .inputContainer i, .oneFromTwo:hover .inputContainer2 i, .oneFromTwo:hover .inputContainerFull i,
+.oneFromFour:hover input, .oneFromFour:hover .inputContainerFull2 i, .oneFromFive:hover .bigIcon, .oneFromFour:hover .bigIcon,
+.oneFromThree:hover .bigIcon, .oneFromTwo:hover .bigIcon, .threeFromFour:hover .bigIcon {
+	color:#4fbd8c;
+}
+.bannerPicture:hover .bannerTag {
+	background-color:#4fbd8c;
+	border-color:#4fbd8c;
+}
+.plusEqual, .button, .columnImage .caption, .smallIcon, .list_carousel a.next, .list_carousel a.prev, .camera_prev, .camera_next, .camera_commands,
+.camera_wrap .camera_pag .camera_pag_ul li.cameracurrent, .camera_prevThumbs, .camera_nextThumbs, .camera_prev, .camera_next, .camera_commands, .camera_thumbs_cont,
+.flex-direction-nav li a, .flex-control-nav li a:hover, .flex-control-nav li a.active {
+	background-color:#4fbd8c;
+}
+.camera_bar_cont span {
+	background-color:#4fbd8c !important;
+}
+.buyNowBlock, .container h2, .footerText, .sliderTitle {
+	border-left:5px #4fbd8c solid;
+}
+a, a:link, a:visited {
+	color:#4fbd8c;
+	text-decoration:underline;
+}
+input:focus, textarea:focus, input:hover, textarea:hover  {
+	color:#4fbd8c;
+	border:1px dashed #4fbd8c;
+}
+@media only screen and (max-width: 580px) {
+	#logoAndContact #contactPhone {
+		background-color:#4fbd8c;
+	}
+}
+
+/* Second color*/
+a:hover, a:active {
+	color:#1f895a;
+}
+.button:hover, .list_carousel a.next:hover, .list_carousel a.next:active, .list_carousel a.prev:hover, .list_carousel a.prev:active, 
+a.smallIcon:hover, a.smallIcon:active, .camera_prev:hover, .camera_prev:active, .camera_next:hover, .camera_next:active,
+.camera_wrap .camera_pag .camera_pag_ul li:hover, .flex-direction-nav li a:hover, .flex-direction-nav li a:active {
+	background-color:#1f895a;
+}
+.flex-control-nav li a:hover {-moz-box-shadow: inset 0 -1px 2px #1f895a; -webkit-box-shadow: inset 0 -1px 2px #1f895a; box-shadow: inset 0 -1px 2px #1f895a;}
+.flex-control-nav li a.active {-moz-box-shadow: inset 0 -1px 2px #1f895a; -webkit-box-shadow: inset 0 -1px 2px #1f895a; box-shadow: inset 0 -1px 2px #1f895a;}
+
+/* Higlighted and selection color */
+.highlighted {
+	background-color:#ffcc66;
+}
+::selection {
+	background-color:#ffcc66;
+}
+::-moz-selection {
+	background-color:#ffcc66;
+}
