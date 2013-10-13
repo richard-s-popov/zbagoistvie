@@ -16,25 +16,25 @@ namespace ZbagoistvieWithDelivery
             routes.MapRoute(
                 name: "Fail",
                 url: "Fail",
-                defaults: new { controller = "Home", action = "Fail" }
+                defaults: new { controller = "Home1", action = "Fail" }
             );
 
             routes.MapRoute(
                 name: "Order",
                 url: "Order/{id}",
-                defaults: new { controller = "Home", action = "Order", id = UrlParameter.Optional }
+                defaults: new { controller = "Home1", action = "Order", id = UrlParameter.Optional }
             );
 
             routes.MapRoute(
                 name: "Success",
                 url: "Success",
-                defaults: new { controller = "Home", action = "Success" }
+                defaults: new { controller = "Home1", action = "Success" }
             );
 
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Home1", action = "Index", id = UrlParameter.Optional }
             );
         }
     }
