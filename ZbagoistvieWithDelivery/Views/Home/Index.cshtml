@@ -1,0 +1,141 @@
+﻿@{
+    ViewBag.Title = "Узбагоительное средство. Узбагойся.";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- start of banner -->
+<div id="banner">
+    <div class="bannerCaption">
+        <div class="bannerText">
+            <h1 class="bannerTitle">Узбагоительное средство</h1>
+            Самое лучшее в мире решение для незбагойных друзей и подруг! Если Вы хотите кого-то узбагоить, то сделайте заказ прямо сейчас!
+            <br /><a class="button big" href="#mainContainer">Купить <i class="icon-caret-right buttonArrow"></i></a>
+            <span class="info marginLeft"><i class="icon-info-sign"></i> Больше информации? info@rbprofit.ru / 34-14-50</span>
+        </div>
+    </div>
+    <div class="bannerPicture">
+        @*<div class="bannerTag">
+            Super<br/>Offer
+        </div>*@
+        <img alt="image" src="@Url.Content("~/Content/img/image5cb7.png")" />
+	</div>
+</div>
+<!-- end of banner -->
+
+<!-- Start of main container -->
+<div id="mainContainer">
+	
+    <!-- Start of three columns -->
+    <div class="row topBorder threeColumns">
+        <div class="oneFromThree first res-hasImage">
+            <div class="container">
+                <h2>1 упаковка</h2>
+                <div class="content">
+                    <div class="columnImage">
+                        <span class="caption arrow">290р.</span>
+                        <div class="imagePattern"></div>
+                        <img alt="image" src="@Url.Content("~/Content/img/LojpCFXzMG8.png")" />
+                    </div>
+                    1 упаковка узбагоина. Доставка включена.
+                    <br/><br/><h3>290р.</h3>
+                    <a class="button" href="http://glopart.ru/buy/27280">Купить <i class="icon-caret-right buttonArrow"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="oneFromThree res-hasImage">
+            <div class="container">
+                <h2>5 упаковок</h2>
+                <div class="content">
+                    <div class="columnImage">
+                        <span class="caption">790р.</span>
+                        <div class="imagePattern"></div>
+                        <img alt="image" src="@Url.Content("~/Content/img/LojpCFXzMG8.png")" />
+                    </div>
+                    5 упаковок узбагоина. Уже дешевле чем проздо 1 упаковка. Доставка включена.
+                    <br/><br/><h3>790р.</h3>
+                    <a class="button" href="http://glopart.ru/buy/27282">Купить <i class="icon-caret-right buttonArrow"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="oneFromThree last res-hasImage">
+            <div class="container">
+                <h2>10 упаковок</h2>
+                <div class="content">
+                    <div class="columnImage">
+                        <span class="caption zoom">1190р.</span>
+                        <div class="imagePattern"></div>
+                        <img alt="image" src="@Url.Content("~/Content/img/LojpCFXzMG8.png")" />
+                    </div>
+                    10 упаковок узбагоина. Еще дешевле. Доставка включена.
+                    <br/><br/><h3>1190р.</h3>
+                    <a class="button" href="http://glopart.ru/buy/27283">Купить <i class="icon-caret-right buttonArrow"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of three columns -->
+    
+    <div class="row bottomBorder" style="margin-bottom: 50px;">
+        <div class="fullRow buyNowBlockContainer first">
+            <div class="buyNowBlock">
+                <h1> Если Вас не узтраивают большие комиссии за перевод, напишите нам на <b>info@rbprofit.ru</b> и мы найдем другие способы решения проблемы.</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of main container -->
+
+<!--///////////// Scripts ////////////-->
+
+<!-- Scripts -->
+<script src="@Url.Content("~/Scripts/jquery.min.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery.form.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery.mousewheel.min.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery.prettyPhoto.js")"></script>
+<script src="@Url.Content("~/Scripts/mColorPicker.min.js")"></script>
+<!-- / Scripts -->
+
+<!-- FlexSlider -->
+<script src="@Url.Content("~/Scripts/jquery.flexslider-min.js")"></script>
+<!-- / FlexSlider -->
+
+<!-- Product features carousel -->
+<script src="@Url.Content("~/Scripts/jquery.carouFredSel-5.6.2.js")"></script> 
+<script src="@Url.Content("~/Scripts/jquery.touchwipe.min.js")"></script>
+<!-- / Product features carousel -->
+
+<script>
+$(document).ready(function() {
+	
+	//	Product features carousel
+	$('#carousel').carouFredSel({
+		responsive: true,
+		prev: '#prev2',
+		next: '#next2',
+		items: 2,
+		scroll: {
+	        wipe: true,
+	        pauseOnHover: true,
+			mousewheel: true
+	    },
+		items: {
+			width: 290,
+			height: "variable",
+			visible: {
+				min: 1,
+				max: 3
+			}
+		}
+	});
+	// / Product features carousel
+	
+	// Testimonials slider 
+	$('.flexslider').flexslider({
+		mousewheel: true
+	});
+	// / Testimonials slider
+
+});
+</script>
+

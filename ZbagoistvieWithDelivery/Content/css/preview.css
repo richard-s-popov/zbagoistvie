@@ -1,0 +1,74 @@
+﻿#themeOptionsButton {
+	background-color: #fff;
+	cursor: pointer;
+	float: right;
+	margin: -11px -61px 0 0;
+	position: relative;
+	right: 0;
+	top: 0;
+	border:1px #e4e4e4 solid;
+	border-left:0;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	width:40px;
+	text-align:center;
+	height:40px;
+}
+#themeOptionsButton img {
+	margin-top:8px;
+}
+#themeOptionsContainer {
+	width:220px;
+	padding:10px 20px 12px 20px;
+	background-color:#fff;	
+	border:1px #e4e4e4 solid;
+	border-left:0;
+	position:fixed;
+	left:0;
+	top:30%;
+	z-index:9999;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-right-radius: 5px;
+}
+#themeOptions {
+	padding:0 20px 10px 20px;
+	font-weight:bold;
+	color:#444;
+	margin:0 -20px 10px -20px;
+	border-bottom: 1px solid #f4f4f4;
+	height: 20px;
+}
+#mainColor, #secondaryColor {
+	display:inline;
+	width:80px;
+	border:0;
+	padding:3px 10px;
+	margin-bottom:10px;
+}
+#themeOptionsContainer span.text {
+	padding:0 10px 0 0;
+	width:110px;
+	display:inline-block;
+}
+#themeOptionsContainer .smallText {
+	font-size:11px;
+	font-style:italic;
+}
+#themeOptionsContainer sup {
+	font-size:14px;
+	font-style:normal;
+	line-height:50%;
+	vertical-align:2px;
+}
+#mColorPicker {
+	height:auto !important;
+	z-index:9999;
+}
+#mColorPickerFooter {
+	display:none;
+}
