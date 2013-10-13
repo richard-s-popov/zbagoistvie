@@ -41,7 +41,31 @@
         @RenderSection("scripts", required: false)
     </head>
 
-    <body>
+<body>
+    <header>
+
+        <!-- start of logo and contact phone -->
+        <div id="logoAndContact">
+            <div id="contactPhone">
+                <div class="smallIconContainer">
+                    <div class="smallIcon">
+                        <i class="icon-phone"></i>
+                    </div>
+                </div>
+                <span class="callUs">Напишите или бозвоните нам если Вы незбагойны:</span><span class="phone">info@rbprofit.ru / 34-14-50</span>
+            </div>
+            <div id="logo">
+                <!-- place here your logo -->
+                <i class="icon-bookmark"></i>
+                <div id="logoTextContainer">
+                    <span id="logoText">RBProfit</span><br/>
+                    <span id="slogan">Rosbusinessprofit</span>
+                </div>
+                <!-- / place here your logo -->
+            </div>
+        </div>
+        <!-- end of logo and contact phone -->
         @RenderBody()
-    </body>
+    </header>
+</body>
 </html>

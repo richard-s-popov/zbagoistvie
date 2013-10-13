@@ -127,6 +127,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Core\EmailMessage.cs" />
+    <Compile Include="Core\EmailService.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -257,7 +259,16 @@
     <Content Include="Content\font\pics\pics\pics\pics\pics\pics\pics\pics\.themeOption h2, .html" />
     <Content Include="Content\font\pics\pics\pics\pics\pics\pics\pics\pics\icon.html" />
     <Content Include="Content\font\pics\pics\pics\pics\pics\pics\pics\pics\pics\icon.html" />
-    <Content Include="Content\img\iFNNSnDXm70.jpg" />
+    <Content Include="Content\img\1.jpg" />
+    <Content Include="Content\img\1_small.jpg" />
+    <Content Include="Content\img\2.jpg" />
+    <Content Include="Content\img\2_small.jpg" />
+    <Content Include="Content\img\3.jpg" />
+    <Content Include="Content\img\3_small.jpg" />
+    <Content Include="Content\img\4.jpg" />
+    <Content Include="Content\img\4_small.jpg" />
+    <Content Include="Content\img\7.jpg" />
+    <Content Include="Content\img\7_small.jpg" />
     <Content Include="Content\img\image40a1.png" />
     <Content Include="Content\img\image5265.png" />
     <Content Include="Content\img\image5cb7.png" />
@@ -266,8 +277,6 @@
     <Content Include="Content\img\imagec0ca.jpg" />
     <Content Include="Content\img\imagecc80.png" />
     <Content Include="Content\img\imagee0f8.png" />
-    <Content Include="Content\img\LojpCFXzMG8 - копия.jpg" />
-    <Content Include="Content\img\LojpCFXzMG8.jpg" />
     <Content Include="Content\img\LojpCFXzMG8.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -454,6 +463,9 @@
     <Content Include="Content\font\fontawesome-webfontd41d.eot" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Views\Home\Success.cshtml" />
+    <Content Include="Views\Home\Fail.cshtml" />
+    <Content Include="Views\Home\Order.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
