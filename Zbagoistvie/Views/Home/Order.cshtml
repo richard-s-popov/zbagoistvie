@@ -1,12 +1,27 @@
 ﻿@{
-    ViewBag.Title = "Order";
+    ViewBag.Title = "Заказ";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="row">
 	<div class="oneFromTwo first">
 		<div class="container">
-			<h2 id="newsletter">Введите данные для отправки</h2>
+		    <h2 id="newsletter">
+		        @if (ViewBag.Id == 1)
+		        {
+                    <text>1 упаковка узбагоина</text>
+		        }
+                
+                @if (ViewBag.Id == 2)
+		        {
+                    <text>5 упаковок узбагоина</text>
+		        }
+                
+                @if (ViewBag.Id == 3)
+		        {
+                    <text>10 упаковок узбагоина</text>
+		        }
+		    </h2>
 			<div class="content">
                 <form id="subscriptionForm" action="@Url.Action("OrderFinish")" method="POST" novalidate="novalidate">
 					Введите данные (email, телефон, ФИО) такие же как при оплате через Glopart

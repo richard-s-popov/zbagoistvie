@@ -29,6 +29,11 @@ namespace Zbagoistvie.Controllers
 
         public ActionResult Order(int id)
         {
+            if (id < 1 || id > 3)
+            {
+                return RedirectToAction("Index");
+            }
+
             ViewBag.Id = id;
             return View();
         }
@@ -44,7 +49,7 @@ namespace Zbagoistvie.Controllers
                                         "Email: {1}<br/>" +
                                         "Тел.: {2}<br/>" +
                                         "Адрес: {3}<br/>", firstName, subscriberEmail, phone, address),
-                To = "u@rbprofit.ru"
+                To = "u@molchunov.com"
             };
 
             switch (id)
